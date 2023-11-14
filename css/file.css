@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #000;
+    --a-hover-color: red;
+    --white-color: #fff;
+    --btn-bg-color: rgb(247, 183, 65);
+}
+
+body{
+    height: 100vh;
+    background-color: var(--bg-color);
+    background-image: url('https://wallpaperswide.com/download/firewatch-wallpaper-1400x1050.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo img{
+    width: 70px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.site_button{
+  width:calc(5vw + 6px);
+  height:calc(2vw + 6px);
+  background-color: var(--btn-bg-color);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:20px;
+  font-weight:bold;
+ transition:  .3s ease-in-out;
+}
+
+
+.site_button:hover{
+    background-color: var(--white-color);
+    color: var(--btn-bg-color);
+}
+
+@keyframes slidebg {
+    to {
+      background-position:10vw;
+    }
+  }
+
+#first_button{
+    width: 160px;
+}
+
+.menu_button{
+    background-color: black;
+    width: 90px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.menu_button:nth-child(1){
+    width: 180px;
+}
+
+
+header{
+    position: relative;
+    padding: 0 2rem;
+    
+}
+
+.popular{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgba(255, 255, 255 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: heigth .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu .action-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 3rem;
+    margin-left: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar .toggle_btn{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 220px;
+    font-family:'Oswald', sans-serif;;
+    margin-left: 100px;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+.cards{
+    height: 250px;
+    width: 240px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url('https://uhdwallpapers.org/uploads/cache/1673409911/neymar-for-brazil-national-team_600x338-mm-90.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: var(--white-color);
+    text-shadow: 0 0 0.8rem black;
+    font-size: 20px;
+    transition: .3s ease-in-out;
+}
+
+.cards:nth-child(1){
+    background-image: url('https://media.architecturaldigest.com/photos/620adef55f756ccc7906dd01/3:2/w_3000,h_2000,c_limit/2-14%20headphones%20v2.jpg');
+}
+
+.cards:nth-child(2){
+    background-image: url('https://cdn.discordapp.com/attachments/1141097788420149248/1171496830979281017/large_32_cat_1549636170.jpeg?ex=655ce471&is=654a6f71&hm=d5a71cb1c55210de2a2b19b78e79cdecbb754c2c5792b47ce1913ff63d62df08&');
+}
+
+.cards:nth-child(3){
+    background-image: url('https://www.thespruce.com/thmb/Wb8gJqlCR66Ild5c3ySyEkhD7W0=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc()/living-room-decor-ideas-5442837-hero-8b6e540e13f9457a84fe9f9e26ea2e5c.jpg');
+}
+
+.cards:nth-child(4){
+    background-image: url('https://www.a-n-a.com/shop/blog/wp-content/uploads/2023/01/teaser-hochwertige-kleidung.jpg');
+}
+
+.cards:nth-child(5){
+    background-image: url('https://auscufflinks.com.au/wp-content/uploads/2023/01/fashion-accessories.jpg');
+}
+
+
+.cards:nth-child(6){
+    background-image: url('https://static.honeykidsasia.com/wp-content/uploads/2017/10/kids-accessories-hero-2.png');
+}
+.cards:hover{
+    transform: translateY(-10px);
+    opacity: 0.85;
+}
+
+.cards:active{
+    opacity: 0.5;
+}
+
+.action-btn{
+    background-color: var(--white-color);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--bg-color);
+    margin-right: 0;
+    transition: .3s ease-in-out;
+}
+
+.action-btn:hover{
+    color: var(--white-color);
+    background-color: var(--bg-color);
+}
+
+@media(max-width: 992px){
+    body{
+        background-repeat: no-repeat;
+    }
+
+    .row{
+        margin-top: 100px;
+        margin-right: 90px;
+    }
+
+    .navbar .links,
+    .navbar .action-btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+        
+    }
+    .row{
+        margin-top: 100px;
+        margin-right: 90px;
+    }
+}
